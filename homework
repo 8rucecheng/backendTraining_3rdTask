@@ -1,1 +1,8 @@
-let const members = ["Alice", "Bob", "Charlie", "Diana", "Evan", "Fiona", "George", "Hannah"]; //樂呵呵健身房目前有 8 位會員
+const members = ["Alice", "Bob", "Charlie", "Diana", "Evan", "Fiona", "George", "Hannah"]; //樂呵呵健身房目前有 8 位會員
+function addPurchaseRecord(menberName, courseAmount){
+  if(members.includes(menberName)){
+    
+  }else{
+    console.log("輸入錯誤，請輸入有效的會員名稱和課程數量。")
+  }
+}
