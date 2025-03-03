@@ -15,9 +15,21 @@ function addPurchaseRecord(menberName, courseAmount){
       console.log(`新增購買記錄成功！會員${menberName}購買${courseAmount}堂課，總金額為${courseAmount * coursePrice}元。`);
     }else if(courseAmount >= 11){
       let coursePrice = 1300;
+      purchaseRecords.push({
+        name : menberName, 
+        courses : courseAmount, 
+        oneCoursePrice : coursePrice, 
+        sumCoursePrice : courseAmount * coursePrice
+      });
       console.log(`新增購買記錄成功！會員${menberName}購買${courseAmount}堂課，總金額為${courseAmount * coursePrice}元。`);
     }else if(courseAmount >= 1){
       let coursePrice = 1500;
+      purchaseRecords.push({
+        name : menberName, 
+        courses : courseAmount, 
+        oneCoursePrice : coursePrice, 
+        sumCoursePrice : courseAmount * coursePrice
+      });
       console.log(`新增購買記錄成功！會員${menberName}購買${courseAmount}堂課，總金額為${courseAmount * coursePrice}元。`);
     }else{
       console.log("輸入錯誤，請輸入有效的會員名稱和課程數量。");
