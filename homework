@@ -1,7 +1,19 @@
 const members = ["Alice", "Bob", "Charlie", "Diana", "Evan", "Fiona", "George", "Hannah"]; //樂呵呵健身房目前有 8 位會員
+
 function addPurchaseRecord(menberName, courseAmount){
   if(members.includes(menberName)){
-    
+    if(courseAmount >= 21 ){
+      let coursePrice = 1100;
+      console.log(`新增購買記錄成功！會員${menberName}購買${courseAmount}堂課，總金額為${courseAmount * coursePrice}元。`)
+    }else if(courseAmount >= 11){
+      let coursePrice = 1300;
+      console.log(`新增購買記錄成功！會員${menberName}購買${courseAmount}堂課，總金額為${courseAmount * coursePrice}元。`)
+    }else if(courseAmount >= 1){
+      let coursePrice = 1500;
+      console.log(`新增購買記錄成功！會員${menberName}購買${courseAmount}堂課，總金額為${courseAmount * coursePrice}元。`)
+    }else{
+      console.log("輸入錯誤，請輸入有效的會員名稱和課程數量。")
+    }
   }else{
     console.log("輸入錯誤，請輸入有效的會員名稱和課程數量。")
   }
