@@ -40,3 +40,12 @@ function addPurchaseRecord(menberName, courseAmount){
 }
 
 //第二階段
+function calculateTotalPrice(){
+  let totalPrice = 0;
+  purchaseRecords.forEach(function(item){
+    totalPrice += item.sumCoursePrice;
+  })
+  console.log(`目前總營業額為${totalPrice}元`);
+}
+
+//第三階段
