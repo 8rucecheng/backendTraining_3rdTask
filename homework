@@ -54,4 +54,5 @@ function filterNoPurchaseMember(){
   let NoPurchaseMember = members.filter(function(name){
     return purchaseRecordsMenberName.includes(name) === false;
   })
+  comsole.log(`未購買課程的會員有${NoPurchaseMember}`);
 }
