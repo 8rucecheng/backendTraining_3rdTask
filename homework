@@ -49,8 +49,9 @@ function calculateTotalPrice(){
 }
 
 //第三階段
+let purchaseRecordsMenberName = ["Bob", "Fiona", "George", "Hannah"] //假設已買課會員名子的陣列
 function filterNoPurchaseMember(){
-  let noBuyCouse = members.filter(function(name){
-    return 
+  let NoPurchaseMember = members.filter(function(name){
+    return purchaseRecordsMenberName.includes(name) === false;
   })
 }
