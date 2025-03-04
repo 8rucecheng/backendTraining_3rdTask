@@ -50,5 +50,7 @@ function calculateTotalPrice(){
 
 //第三階段
 function filterNoPurchaseMember(){
-  
+  let noBuyCouse = members.filter(function(name){
+    return 
+  })
 }
