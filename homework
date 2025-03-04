@@ -49,3 +49,6 @@ function calculateTotalPrice(){
 }
 
 //第三階段
+function filterNoPurchaseMember(){
+  
+}
