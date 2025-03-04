@@ -49,10 +49,13 @@ function calculateTotalPrice(){
 }
 
 //第三階段
-let purchaseRecordsMenberName = ["Bob", "Fiona", "George", "Hannah"] //假設已買課會員名子的陣列
+let purchaseRecordsMenberNames = [];
+purchaseRecords.forEach(function(item){
+  purchaseRecordsMenberNames.push(item.name);
+})
 function filterNoPurchaseMember(){
   let NoPurchaseMember = members.filter(function(name){
-    return purchaseRecordsMenberName.includes(name) === false;
+    return purchaseRecordsMenberNames.includes(name) === false;
   })
   comsole.log(`未購買課程的會員有${NoPurchaseMember}`);
 }
