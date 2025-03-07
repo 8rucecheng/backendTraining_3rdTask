@@ -49,13 +49,13 @@ function calculateTotalPrice(){
 }
 
 //第三階段
-//從陣列「purchaseRecords」取出「已購買課程會員名子」資訊，組成陣列「purchaseRecordsMenberNames」
-let purchaseRecordsMenberNames = [];
-purchaseRecords.forEach(function(item){
-  purchaseRecordsMenberNames.push(item.name);
-})
-//透過比對陣列「members」與「purchaseRecordsMenberNames」，取出「未購買課程會員名子」資訊，組成陣列「NoPurchaseMember」
 function filterNoPurchaseMember(){
+  //從陣列「purchaseRecords」取出「已購買課程會員名子」資訊，組成陣列「purchaseRecordsMenberNames」
+  let purchaseRecordsMenberNames = [];
+  purchaseRecords.forEach(function(item){
+    purchaseRecordsMenberNames.push(item.name);
+  })
+  //透過比對陣列「members」與「purchaseRecordsMenberNames」，取出「未購買課程會員名子」資訊，組成陣列「NoPurchaseMember」
   let NoPurchaseMember = members.filter(function(name){
     return purchaseRecordsMenberNames.includes(name) === false;
   })
